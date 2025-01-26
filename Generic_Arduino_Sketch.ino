@@ -26,11 +26,11 @@ void loop() {
     Serial.print("Sensor value is: "); //print a message to the serial monitor
     Serial.println(sensorValue); //print the value to the serial monitor
     
-    //check if sensorValue is below 200
+    //check if sensorValue is below 50
     if(sensorValue < 50) { 
         digitalWrite(ledPin, HIGH); //if it is, turn on the LED on pin 2.
     }
-    //if sensorValue is above 200, turn off the LED
+    //if sensorValue is above 50, turn off the LED
     else{ 
         digitalWrite(ledPin, LOW);
     }
